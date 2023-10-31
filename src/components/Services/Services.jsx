@@ -57,13 +57,14 @@ const Services = () => {
         <div className="mt-8 grid grid-cols-1 gap-12 md:grid-cols-2">
           {/* Menu Item 1 */}
           <div
+        //   Using animation 
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             className="bg-white overflow-hidden shadow rounded-lg"
           >
             <img
               className="w-full h-64 object-cover"
-              src="/public/burger2.jpg"
+              src="/burger2.jpg"
               alt="Menu Item 1"
             />
             <div className="p-6">
@@ -79,13 +80,14 @@ const Services = () => {
 
           {/* Menu Item 2 */}
           <div
+        //   using animation 
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             className="bg-white overflow-hidden shadow rounded-lg"
           >
             <img
               className="w-full h-64 object-cover"
-              src="/public/pizza2.jpg"
+              src="/pizza2.jpg"
               alt="Menu Item 2"
             />
             <div className="p-6">

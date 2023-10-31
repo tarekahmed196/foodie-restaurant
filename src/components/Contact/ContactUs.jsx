@@ -8,7 +8,7 @@ const ContactUs = () => {
       <div className="contact-image">
         <img
           className="rounded-lg opacity-70"
-          src="/public/contact1.jpg" // Contact image URL
+          src="/contact1.jpg" // Contact image URL
           alt="Contact Us Image"
           style={{ width: "100%" }}
         />
@@ -18,10 +18,9 @@ const ContactUs = () => {
         For any inquiries or reservations, please feel free to contact us using
         the information below.
       </p>
-      <div className="contact-details grid grid-cols-3 justify-items-center">
-        <p>Address: 123 Restaurant Street, Mirpur, Dhaka, Bangladesh</p>
-        <p>Phone: +1234567890</p>
-        <p>Email: info@foodierestaurant.com</p>
+      <div className="contact-details grid grid-cols-3 justify-items-center sm:text-center sm:grid sm:grid-cols-1 p-2">
+        <p className="p-2">Address: 123 Restaurant Street,Dhaka, Bangladesh</p>
+        <p className="p-2">Phone: +1234567890</p>
       </div>
     </div>
   );

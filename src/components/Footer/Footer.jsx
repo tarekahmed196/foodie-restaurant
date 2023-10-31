@@ -109,7 +109,7 @@ const Footer = () => {
               © 2023 <a href="https://flowbite.com/">Tarek Ahmed</a>. All Rights
               Reserved.
             </span>
-            <div className="flex mt-0 space-x-5 sm:justify-center md:mt-0">
+            <div className="flex mt-0 space-x-5 sm:text-center sm:justify-center md:mt-0">
               <a
                 href="#"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"

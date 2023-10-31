@@ -41,28 +41,28 @@ export default function Carousel1() {
       >
         {/* Slider images  */}
         <SwiperSlide>
-          <img src="/public/slide1.png" />
+          <img src="/slide1.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/public/slide2.png" />
+          <img src="/slide2.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/public/slide3.png" />
+          <img src="/slide3.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/public/slide4.png" />
+          <img src="/slide4.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/public/slide5.png" />
+          <img src="/slide5.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/public/slide6.png" />
+          <img src="/slide6.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/public/slide7.png" />
+          <img src="/slide7.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/public/slide8.png" />
+          <img src="/slide8.png" />
         </SwiperSlide>
       </Swiper>
     </div>

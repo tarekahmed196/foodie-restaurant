@@ -8,13 +8,14 @@ const Features = () => {
         Our Special <span className="text-orange-300">Features</span>
       </h2>
       <section className="max-w-7xl mx-auto py-4 sm:px-0 lg:px-0 grid lg:grid-cols-2 gap-5 my-20">
+        {/* Using animation  */}
         <div
           data-aos="fade-right"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
           className="flex bg-white-200 shadow-lg rounded-2xl px-0"
         >
-          <img className="p-1 w-20 h-20" src="/public/image 12.png" alt="" />
+          <img className="p-1 w-20 h-20" src="/image 12.png" alt="" />
           <div className="p-2 space-y-2">
             <h1 className="font-bold">Find the Perfect Food</h1>
             <p>
@@ -23,14 +24,14 @@ const Features = () => {
             </p>
           </div>
         </div>
-
+        {/* Using animation  */}
         <img
           data-aos="fade-left"
           data-aos-anchor="#example-anchor"
           data-aos-offset="500"
           data-aos-duration="500"
           className="w-100 mx-auto rounded-2xl bg-white-200 row-span-3"
-          src="/public/pizza1.jpg"
+          src="/pizza1.jpg"
           alt=""
         />
 
@@ -40,7 +41,7 @@ const Features = () => {
           data-aos-easing="ease-in-sine"
           className="flex bg-white-200 shadow-lg rounded-2xl p-2"
         >
-          <img className="p-1 w-20 h-20" src="/public/image 13.png" alt="" />
+          <img className="p-1 w-20 h-20" src="/image 13.png" alt="" />
           <div className="p-2 space-y-2">
             <h2 className="font-bold">Find the Perfect Food</h2>
             <p>
@@ -56,7 +57,7 @@ const Features = () => {
           data-aos-easing="ease-in-sine"
           className="flex bg-white-200 shadow-lg rounded-2xl p-2"
         >
-          <img className="p-1 w-20 h-20" src="public/image 14.png" alt="" />
+          <img className="p-1 w-20 h-20" src="/image 14.png" alt="" />
           <div className="p-2 space-y-2">
             <h2 className="font-bold">Find the Perfect Food</h2>
             <p>
