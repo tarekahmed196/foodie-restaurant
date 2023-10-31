@@ -1,42 +1,26 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-import './index.css'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Home from './components/Home/Home.jsx';
-import Main from './components/Outlet/Main.jsx';
-import Foods from './components/Foods/Foods.jsx';
-import Services from './components/Services/Services';
-
-
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./components/Home/Home.jsx";
+import Main from "./components/Outlet/Main.jsx";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <Main></Main>,
     children: [
       {
-        path: '/',
-        element:<Home></Home>
+        path: "/",
+        element: <Home></Home>,
       },
-      {
-        path: 'foods',
-        element:<Foods></Foods>
-      },
-      {
-        path: 'services',
-        element:<Services></Services>
-      }
-    ]
-  }
+    ],
+  },
+]);
 
-])
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);

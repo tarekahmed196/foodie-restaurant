@@ -1,22 +1,17 @@
-import React from 'react';
-import About from '../About/About';
-import './Home.css'
-import Slider from '../Slider/Slider';
-import Foods from '../Foods/Foods';
-import Features from '../Features/Features';
-import Services from '../Services/Services';
-import ContactUs from '../Contact/ContactUs';
-import SignUp from '../Contact/SignUp';
-import Carousel1 from '../Carousel/Carousel';
-
-
-
-
+import React from "react";
+import About from "../About/About";
+import "./Home.css";
+import Slider from "../Slider/Slider";
+import Foods from "../Foods/Foods";
+import Features from "../Features/Features";
+import Services from "../Services/Services";
+import ContactUs from "../Contact/ContactUs";
+import SignUp from "../Contact/SignUp";
+import Carousel1 from "../Carousel/Carousel";
 
 const Home = () => {
-    return (
-        <div>
-          
+  return (
+    <div>
       <Slider></Slider>
       <Foods></Foods>
       <Carousel1></Carousel1>
@@ -25,11 +20,8 @@ const Home = () => {
       <About></About>
       <ContactUs></ContactUs>
       <SignUp></SignUp>
-      
-            
-        </div>
-        
-    );
+    </div>
+  );
 };
 
 export default Home;

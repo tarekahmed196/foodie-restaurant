@@ -1,7 +1,7 @@
 import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Autoplay } from 'swiper';
+import SwiperCore, { Autoplay } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
@@ -14,10 +14,12 @@ import "./styles.css";
 import { EffectCoverflow, Pagination } from "swiper";
 
 export default function Carousel1() {
-    SwiperCore.use([Autoplay]);
+  SwiperCore.use([Autoplay]);
   return (
     <div id="display" className="max-w-7xl mx-auto truncate">
-        <h2 className="text-5xl text-center font-bold text-gray-700 mt-16 mb-8">Delish <span className="text-orange-400">Display</span></h2>
+      <h2 className="text-5xl text-center font-bold text-gray-700 mt-16 mb-8">
+        Delish <span className="text-orange-400">Display</span>
+      </h2>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -30,13 +32,14 @@ export default function Carousel1() {
           modifier: 1,
           slideShadows: true,
         }}
-        autoplay= {{
-            delay: 2000
+        autoplay={{
+          delay: 2000,
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper "
       >
+        {/* Slider images  */}
         <SwiperSlide>
           <img src="/public/slide1.png" />
         </SwiperSlide>
@@ -61,7 +64,6 @@ export default function Carousel1() {
         <SwiperSlide>
           <img src="/public/slide8.png" />
         </SwiperSlide>
-        
       </Swiper>
     </div>
   );
