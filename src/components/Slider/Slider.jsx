@@ -5,16 +5,20 @@ import { BiArrowBack } from 'react-icons/bi';
 const bannerData = [
     {
         id: 1,
-        image: "/about1.jpg"
+        image: "/cover1.jpg"
     },
     {
         id: 2,
-        image: "/hero.jpg"
+        image: "/cover2.jpg"
     },
     {
         id: 3,
-        image: "/about1.jpg"
+        image: "/cover3.jpg"
     },
+    {
+        id: 3,
+        image: "/cover4.jpg"
+    }
 ]
 
 const Slider = () => {
@@ -49,31 +53,14 @@ const Slider = () => {
                     bannerData?.map((banner) => (
                         <div key={banner.id} >
                             <img src={banner.image} className=" h-[calc(100vh)] object-cover " />
-                            <div className=' absolute bg-white text-primary left-0 bottom-[25px] uppercase cursor-pointer px-[10px] md:py[15px] py-[8px] md:py-[10px] hover:bg-[#1F2937] hover:text-white transition-colors ease-out ' >
+                            <div className=' absolute bg-white text-black left-0 bottom-[25px] uppercase cursor-pointer px-[10px] md:py[15px] py-[8px] md:py-[10px] hover:bg-[#1F2937] hover:text-white transition-colors ease-out ' >
                                 Shop Now
                             </div>
                         </div>
                     ))
                 }
 
-                {/* <div>
-                    <img src="/slide-1.png" className="aspect-[16/10] md:aspect-auto object-cover " />
-                    <div className=' absolute bg-white text-primary left-0 bottom-[25px] uppercase cursor-pointer px-[10px] md:py[15px] py-[8px] md:py-[10px] hover:bg-[#1F2937] hover:text-white transition-colors ease-out ' >
-                        Shop Now
-                    </div>
-                </div>
-                <div>
-                    <img src="/slide-2.png" className="aspect-[16/10] md:aspect-auto object-cover " />
-                    <div className=' absolute bg-white text-primary left-0 bottom-[25px] uppercase cursor-pointer px-[10px] md:py[15px] py-[8px] md:py-[10px] hover:bg-[#1F2937] hover:text-white transition-colors ease-out ' >
-                        Shop Now
-                    </div>
-                </div>
-                <div>
-                    <img src="/slide-3.png" className="aspect-[16/10] md:aspect-auto object-cover " />
-                    <div className=' absolute bg-white text-primary left-0 bottom-[25px] uppercase cursor-pointer px-[10px] md:py[15px] py-[8px] md:py-[10px] hover:bg-[#1F2937] hover:text-white transition-colors ease-out ' >
-                        Shop Now
-                    </div>
-                </div> */}
+                
             </Carousel>
         </div>
     );

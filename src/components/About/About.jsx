@@ -13,23 +13,18 @@ const About = () => {
       }, []);
 
     return (
-        <section className="bg-white py-32">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id='about' className="bg-white py-32">
+      <div className="max-w-7xl mx-auto py-4 sm:px-0 lg:px-0">
         <div className="md:flex md:flex-wrap md:-mx-4">
           <div data-aos="zoom-out-down" data-aos-duration="1000" data-aos-easing="ease-out" className="md:w-1/2 md:px-4">
             <h2  className="text-5xl font-extrabold text-gray-900 ">
-              About Foodie
+              About <span className="text-orange-200">Foodie</span>
             </h2>
             <p className="mt-4 text-gray-500">
-              MediHealth is an online health platform that connects patients with
-              healthcare providers. Our mission is to improve access to quality
-              healthcare for everyone, regardless of location or income.
+            Foodie Restaurant, nestled in the heart of the bustling city, is an exquisite culinary haven that captures the essence of gastronomic delight. With an ambience that seamlessly marries modern sophistication and cozy warmth, this restaurant offers a tantalizing journey through a diverse array of flavors and textures. 
             </p>
             <p className="mt-4 text-gray-500">
-              With MediHealth, you can easily book appointments with doctors,
-              dentists, therapists, and other healthcare providers, all from the
-              comfort of your own home. Our platform is secure, reliable, and
-              easy to use, so you can focus on getting the care you need.
+            At Foodie Restaurant, the culinary adventure begins with an array of mouthwatering appetizers that awaken the taste buds and set the stage for a memorable feast. Whether it's the delicate balance of flavors in the Thai-inspired shrimp lemongrass soup or the savory richness of the truffle-infused wild mushroom bruschetta, each dish is a testament to the chef's artistry and commitment to culinary excellence. 
             </p>
           </div>
           <div data-aos="fade-down"

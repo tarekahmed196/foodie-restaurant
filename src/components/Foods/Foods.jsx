@@ -20,11 +20,6 @@ useEffect(() => {
   getProducts();
 }, []); 
 
-/* useEffect(()=>{
-  fetch('../../public/db.json')
-  .then(res=> res.json)
-  .then(data => setItems(data))
-},[]) */
 
 console.log(items);
     return (
@@ -32,7 +27,9 @@ console.log(items);
         <>
         
 <nav id='section-1' className="bg-white dark:bg-gray-900 w-full z-20 left-0 border-b border-gray-200 dark:border-gray-600 mt-32">
+<h1 data-aos="zoom-in-up" className='text-5xl text-center font-bold text-gray-700'>Find your <span className='text-orange-300'>items</span> here</h1>
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  
   
   <div className="flex md:order-2">
       
@@ -57,15 +54,18 @@ console.log(items);
   </div>
 </nav>
 
-          <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-16 mt-6">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-x-20 gap-y-16 mt-6 ">
           {items && items.length > 0 && items.map((item) => (
   (type === 'all' || type === item?.item) && (
-    <div key={item.id} className="bg-white shadow rounded-lg overflow-hidden">
+    <div key={item.id} className="bg-white shadow rounded-lg overflow-hidden shadow-2xl hover:-translate-y-1 transition duration-300">
       <img src={item?.picture} alt={item?.name} className="w-full h-48 object-cover" />
-      <div className="p-4">
+      <div className="p-4 ">
         <h3 className="font-semibold text-lg">{item?.name}</h3>
         <p className="text-gray-600">{item?.about}</p>
-        <p className="text-green-600 font-semibold">${item?.price}</p>
+        <div className='flex justify-between items-center mt-auto'>
+          <p className="text-green-600 font-semibold">${item?.price}</p>
+          <button type="button" className="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Order Now</button>
+        </div>
       </div>
     </div>
   )
